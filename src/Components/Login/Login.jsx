@@ -1,6 +1,6 @@
-import { getAuth } from "firebase/auth/cordova";
+
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import app from "../../firebase/firebase.init";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth/web-extension";
 
 const Login = () => {
     const auth = getAuth(app);
